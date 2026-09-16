@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM KHÍ 3P - Gia Công Cơ Khí Chính Xác & Đột Dập Kim Loại Tấm OEM</title>
+    <meta name="description" content="Chuyên gia công đột dập cơ khí chính xác, phụ tùng xe máy OEM, kệ kho công nghiệp (Beam 48, 72, 97), lồng thép & nội thất kim loại xuất khẩu tại KCN Lê Minh Xuân.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        steel: {
+                            50: '#f4f5f7',
+                            100: '#e4e6eb',
+                            500: '#525b6a',
+                            800: '#2b303a',
+                            900: '#1c2026',
+                        },
+                        navy: {
+                            700: '#1a365d',
+                            800: '#0f2744',
+                            900: '#0a192f',
+                        },
+                        brand: {
+                            red: '#e63946',
+                            redHover: '#c82333',
+                            orange: '#f77f00',
+                            gray: '#2b303a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .steel-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(230, 57, 70, 0.25);
+        }
+        .chat-shadow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15), 0 0 15px rgba(26, 54, 93, 0.1);
+        }
+        /* Custom Scrollbar for Chatbox */
+        .chat-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+        .chat-scroll::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .chat-scroll::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- TOP UTILITY BAR (BRIGHT THEME) -->
+    <div class="bg-slate-100 text-slate-600 text-xs py-2 px-4 border-b border-slate-200 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span><i class="fa-solid me-1.5 fa-location-dot text-brand-red"></i> Nhà máy: KCN Lê Minh Xuân, Bình Chánh, TP. Hồ Chí Minh</span>
+                <span><i class="fa-solid me-1.5 fa-clock text-slate-500"></i> Giờ làm việc: T2 - T7 (7:30 - 17:00)</span>
+                <span><i class="fa-solid me-1.5 fa-certificate text-amber-500"></i> Chuẩn ISO 9001:2015</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="mailto:kimkhi3p@3pmetal.vn" class="hover:text-brand-red transition"><i class="fa-solid fa-envelope me-1"></i> kimkhi3p@3pmetal.vn</a>
+                <span class="text-slate-300">|</span>
+                <!-- Language Selector -->
+                <div class="flex items-center gap-1 font-semibold">
+                    <button id="lang-vi" onclick="setLanguage('vi')" class="px-1.5 py-0.5 rounded text-white bg-brand-red transition">VI</button>
+                    <button id="lang-en" onclick="setLanguage('en')" class="px-1.5 py-0.5 rounded text-slate-600 hover:text-brand-red transition">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR (BRIGHT GLASS HEADER) -->
+    <header class="sticky top-0 z-40 glass-header border-b border-slate-200 text-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-brand-red to-red-700 rounded-lg flex items-center justify-center font-heading font-extrabold text-2xl text-white shadow-md group-hover:scale-105 transition transform">
+                        3P
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading font-extrabold text-xl tracking-tight text-slate-900 leading-tight">KIM KHÍ 3P</span>
+                        <span class="text-[10px] tracking-widest text-slate-500 uppercase font-bold">3P Metal Joint Stock Co.</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP MENU -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+                    <a href="#about" class="text-slate-700 hover:text-brand-red transition py-1" data-i18n="nav_about">Giới Thiệu</a>
+                    <a href="#products" class="text-slate-700 hover:text-brand-red transition py-1" data-i18n="nav_products">Sản Phẩm Cốt Lõi</a>
+                    <a href="#process" class="text-slate-700 hover:text-brand-red transition py-1" data-i18n="nav_process">Quy Trình B2B</a>
+                    <a href="#quote-section" class="text-slate-700 hover:text-brand-red transition py-1" data-i18n="nav_quote">Gửi Bản Vẽ Báo Giá</a>
+                    <a href="#contact" class="text-slate-700 hover:text-brand-red transition py-1" data-i18n="nav_contact">Liên Hệ</a>
+                </nav>
+
+                <!-- CALL ACTION & HOTLINE -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:02837661674" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 border border-slate-300 px-4 py-2.5 rounded-lg text-slate-800 font-bold text-sm transition group shadow-sm">
+                        <i class="fa-solid fa-phone-volume text-brand-red group-hover:animate-bounce"></i>
+                        <span>(028) 3766 1674</span>
+                    </a>
+                    <a href="#quote-section" class="bg-brand-red hover:bg-brand-redHover text-white px-5 py-2.5 rounded-lg font-bold text-sm transition shadow-md hover:shadow-red-600/30" data-i18n="nav_btn_quote">
+                        Báo Giá Ngay
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-menu-btn" class="lg:hidden text-2xl text-slate-800 focus:outline-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DRAWER -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-4 pb-6 space-y-3 shadow-xl">
+            <a href="#about" class="block text-slate-800 hover:text-brand-red font-medium py-2 border-b border-slate-100" data-i18n="nav_about">Giới Thiệu</a>
+            <a href="#products" class="block text-slate-800 hover:text-brand-red font-medium py-2 border-b border-slate-100" data-i18n="nav_products">Sản Phẩm Cốt Lõi</a>
+            <a href="#process" class="block text-slate-800 hover:text-brand-red font-medium py-2 border-b border-slate-100" data-i18n="nav_process">Quy Trình B2B</a>
+            <a href="#quote-section" class="block text-slate-800 hover:text-brand-red font-medium py-2 border-b border-slate-100" data-i18n="nav_quote">Gửi Bản Vẽ Báo Giá</a>
+            <a href="#contact" class="block text-slate-800 hover:text-brand-red font-medium py-2" data-i18n="nav_contact">Liên Hệ</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:02837661674" class="w-full text-center bg-slate-100 border border-slate-300 text-slate-900 py-2.5 rounded-lg font-bold"><i class="fa-solid fa-phone me-2 text-brand-red"></i>Hotline: (028) 3766 1674</a>
+                <div class="flex justify-center gap-2 pt-2">
+                    <button onclick="setLanguage('vi')" class="px-4 py-1 text-sm bg-brand-red text-white font-bold rounded">Tiếng Việt</button>
+                    <button onclick="setLanguage('en')" class="px-4 py-1 text-sm bg-slate-200 text-slate-700 font-bold rounded">English</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO BANNER SECTION (BRIGHT & HIGH CONTRAST) -->
+    <section class="relative bg-gradient-to-br from-slate-50 via-slate-100 to-red-50/40 text-slate-900 overflow-hidden py-20 lg:py-28 border-b border-slate-200">
+        <!-- Subtle Grid Pattern -->
+        <div class="absolute inset-0 z-0 opacity-40 steel-pattern"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white border border-brand-red/30 shadow-sm px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-brand-red">
+                        <span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+                        <span data-i18n="hero_badge">Nhà Máy Gia Công Cơ Khí & Đột Dập Hàng Đầu TP.HCM</span>
+                    </div>
+
+                    <h1 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-tight uppercase text-slate-900">
+                        GIA CÔNG ĐỘT DẬP <br>
+                        <span class="text-brand-red text-glow">KIM LOẠI TẤM CHÍNH XÁC</span>
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0 font-medium" data-i18n="hero_desc">
+                        Chuyên nghiệp sản xuất OEM Phụ tùng xe máy, Giá kệ kho công nghiệp (Beam 48, 72, 97), Lồng thép chứa hàng và Bàn ghế kim loại xuất khẩu theo tiêu chuẩn chất lượng nghiêm ngặt.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#quote-section" class="w-full sm:w-auto bg-brand-red hover:bg-brand-redHover text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg hover:shadow-red-600/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-file-invoice text-xl"></i>
+                            <span data-i18n="hero_cta1">Nhận Báo Giá Bản Vẽ CAD/3D</span>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-8 py-4 rounded-xl font-bold text-base shadow-sm transition flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-industry text-xl text-brand-red"></i>
+                            <span data-i18n="hero_cta2">Tham Quan Nhà Máy</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200 text-left">
+                        <div>
+                            <div class="font-heading font-black text-2xl lg:text-3xl text-slate-900">10.000+</div>
+                            <div class="text-xs text-slate-500 font-semibold" data-i18n="stat_1">m² Diện Tích Xưởng</div>
+                        </div>
+                        <div>
+                            <div class="font-heading font-black text-2xl lg:text-3xl text-brand-red">100%</div>
+                            <div class="text-xs text-slate-500 font-semibold" data-i18n="stat_2">Chính Xác Bản Vẽ</div>
+                        </div>
+                        <div>
+                            <div class="font-heading font-black text-2xl lg:text-3xl text-navy-700">15+</div>
+                            <div class="text-xs text-slate-500 font-semibold" data-i18n="stat_3">Năm Kinh Nghiệm OEM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO IMAGE CARD (BRIGHT CARD) -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-brand-red to-orange-400 opacity-20 blur-md"></div>
+                        <div class="relative bg-white border border-slate-200 rounded-2xl p-4 shadow-xl">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80" alt="Xưởng gia công dập Kim Khí 3P" class="rounded-xl w-full h-80 object-cover mb-4">
+                            <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-full bg-brand-red/10 border border-brand-red/30 flex items-center justify-center text-brand-red">
+                                            <i class="fa-solid fa-gears text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-slate-900 text-sm" data-i18n="hero_card_title">Nhà Máy KCN Lê Minh Xuân</h4>
+                                            <p class="text-xs text-slate-500">Hệ thống máy dập CNC & Hàn Robot</p>
+                                        </div>
+                                    </div>
+                                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                                        <i class="fa-solid fa-circle text-[8px] me-1 text-emerald-600 animate-pulse"></i> Sẵn sàng SX
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERVIEW & CAPABILITIES -->
+    <section id="about" class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-red mb-2" data-i18n="about_subtitle">VỀ CÔNG TY CỔ PHẦN KIM KHÍ 3P</h2>
+                <h3 class="font-heading font-black text-3xl sm:text-4xl text-steel-900 uppercase tracking-tight" data-i18n="about_title">NĂNG LỰC SẢN XUẤT CƠ KHÍ CHUẨN CÔNG NGHIỆP</h3>
+                <div class="w-20 h-1.5 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-brand-red/50 transition hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-navy-700 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-red transition">
+                        <i class="fa-solid fa-vortlayer"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-steel-900 mb-3" data-i18n="cap_1_title">Đột Dập Kim Loại Tấm</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_1_desc">
+                        Sở hữu dàn máy dập thủy lực & dập xích tải trọng lớn từ 25 tấn đến 250 tấn. Đảm bảo đột lỗ, dập định hình chuẩn tuyệt đối theo bản vẽ kỹ thuật.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-brand-red/50 transition hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-navy-700 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-red transition">
+                        <i class="fa-solid fa-draw-polygon"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-steel-900 mb-3" data-i18n="cap_2_title">Thiết Kế Chế Tạo Khuôn Dập</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_2_desc">
+                        Đội ngũ kỹ sư CAD/CAM giàu kinh nghiệm tự chủ bóc tách bản vẽ, lập trình và chế tạo khuôn dập đơn, khuôn dập liên hoàn tối ưu chi phí cho khách hàng.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-brand-red/50 transition hover:shadow-xl group">
+                    <div class="w-14 h-14 bg-navy-700 text-white rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-red transition">
+                        <i class="fa-solid fa-spray-can"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-xl text-steel-900 mb-3" data-i18n="cap_3_title">Hàn Robot & Sơn Tĩnh Điện</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="cap_3_desc">
+                        Trang bị dây chuyền hàn Robot TIG/MIG tự động hóa cao và xưởng sơn tĩnh điện khép kín. Bề mặt sản phẩm bóng đẹp, chống ăn mòn hóa chất hoàn hảo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS CATALOGUE SECTION -->
+    <section id="products" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-red mb-2" data-i18n="prod_subtitle">DANH MỤC SẢN XUẤT CHÍNH</h2>
+                    <h3 class="font-heading font-black text-3xl sm:text-4xl text-steel-900 uppercase tracking-tight" data-i18n="prod_title">4 MẢNG SẢN PHẨM CỐT LÕI KIM KHÍ 3P</h3>
+                </div>
+                <p class="text-slate-500 text-sm mt-3 md:mt-0 max-w-md" data-i18n="prod_note">
+                    Đáp ứng quy mô sản xuất hàng loạt (MOQ lớn) cho các tập đoàn OEM, chuỗi logistics và đối tác xuất khẩu Mỹ/Châu Âu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Motorcycle OEM -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 flex flex-col border border-slate-200">
+                    <div class="relative h-48 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Phụ tùng xe máy OEM" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-brand-red text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase">OEM Specs</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-steel-900 mb-2">Phụ Tùng Xe Máy OEM</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Gia công và lắp ráp linh kiện phụ tùng xe máy độ bền cao: <strong>Vành xe, ống xả (pô xe), hộp xích, gắp sau, chân chống, khung gầm</strong> dập chịu lực.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100 mb-4">
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Độ chính xác kích thước ±0.05mm</li>
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Xi mạ Chrome / Sơn tĩnh điện</li>
+                        </ul>
+                        <a href="#quote-section" onclick="preselectProduct('Phụ tùng xe máy OEM')" class="w-full py-2.5 bg-steel-800 hover:bg-brand-red text-white rounded-lg text-xs font-bold text-center transition">Báo Giá Mảng Xe Máy</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Export Furniture -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 flex flex-col border border-slate-200">
+                    <div class="relative h-48 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Nội thất kim loại xuất khẩu" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-navy-700 text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase">Export Standard</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-steel-900 mb-2">Nội Thất Kim Loại Xuất Khẩu</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Sản xuất kết cấu bàn ghế kim loại cao cấp: <strong>Ghế tựa Cherry tiêu chuẩn, khung bàn ghế sắt dập định hình</strong>, chân bàn văn phòng sơn tĩnh điện xuất khẩu.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100 mb-4">
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Mối hàn mài nhẵn thẩm mỹ</li>
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Đạt test phun muối chống gỉ</li>
+                        </ul>
+                        <a href="#quote-section" onclick="preselectProduct('Nội thất kim loại xuất khẩu')" class="w-full py-2.5 bg-steel-800 hover:bg-brand-red text-white rounded-lg text-xs font-bold text-center transition">Báo Giá Nội Thất</a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Racking & Mesh Containers -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 flex flex-col border border-slate-200">
+                    <div class="relative h-48 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Giá kệ kho công nghiệp Beam 48 72 97" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-amber-600 text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase">Heavy Duty</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-steel-900 mb-2">Kệ Kho Công Nghiệp & Lồng Thép</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Chuyên dập châm hèm thanh <strong>Beam 48, Beam 72, Beam 97</strong>, chân cột Selective và <strong>Lồng thép kho hàng (wire mesh container)</strong> gấp gọn tiện lợi.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100 mb-4">
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Tải trọng nặng đến 3.000 kg/tầng</li>
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Mạ kẽm / Sơn tĩnh điện bền bỉ</li>
+                        </ul>
+                        <a href="#quote-section" onclick="preselectProduct('Giá kệ kho & Lồng thép công nghiệp')" class="w-full py-2.5 bg-steel-800 hover:bg-brand-red text-white rounded-lg text-xs font-bold text-center transition">Báo Giá Kệ Kho & Lồng Thép</a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Custom Stamping & CNC -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 flex flex-col border border-slate-200">
+                    <div class="relative h-48 overflow-hidden bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80" alt="Gia công cơ khí dập đột theo bản vẽ CAD" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded uppercase">Custom CAD/3D</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-steel-900 mb-2">Gia Công Theo Bản Vẽ Kỹ Thuật</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+                                Nhận gia công đột dập, uốn bẻ định hình, chấn CNC, chấn ống, phay cắt và hàn cụm kết cấu kim loại theo yêu cầu bản vẽ CAD/STEP/SolidWorks.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-500 space-y-1.5 pt-3 border-t border-slate-100 mb-4">
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Nhận từ sản xuất mẫu đến hàng loạt</li>
+                            <li><i class="fa-solid fa-check text-brand-red me-1.5"></i>Hỗ trợ tối ưu hóa kết cấu B2B</li>
+                        </ul>
+                        <a href="#quote-section" onclick="preselectProduct('Gia công đột dập theo bản vẽ CAD/3D')" class="w-full py-2.5 bg-steel-800 hover:bg-brand-red text-white rounded-lg text-xs font-bold text-center transition">Gửi Bản Vẽ Ngay</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B WORKFLOW SECTION (LIGHT THEME) -->
+    <section id="process" class="py-20 bg-slate-100 text-slate-900 relative border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-brand-red mb-2" data-i18n="proc_subtitle">QUY TRÌNH HỢP TÁC B2B CHUYÊN NGHIỆP</h2>
+                <h3 class="font-heading font-black text-3xl sm:text-4xl text-slate-900 uppercase tracking-tight" data-i18n="proc_title">4 BƯỚC TỪ BẢN VẼ ĐẾN BÀN GIAO MẶT HÀNG</h3>
+                <div class="w-20 h-1.5 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Line background for desktop -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-slate-300 -translate-y-6 z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10 bg-white p-6 rounded-2xl border border-slate-200 text-center flex flex-col items-center shadow-md">
+                    <div class="w-16 h-16 bg-brand-red text-white font-heading font-black text-2xl rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                        01
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900 mb-2" data-i18n="step_1_t">Tiếp Nhận Bản Vẽ</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="step_1_d">
+                        Khách hàng gửi file CAD 2D (.dwg, .dxf) hoặc 3D (.step, .igs) qua Form/Zalo hoặc mẫu cơ khí thực tế.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10 bg-white p-6 rounded-2xl border border-slate-200 text-center flex flex-col items-center shadow-md">
+                    <div class="w-16 h-16 bg-navy-800 text-white font-heading font-black text-2xl rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                        02
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900 mb-2" data-i18n="step_2_t">Bóc Tách & Báo Giá</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="step_2_d">
+                        Đội ngũ kỹ sư bóc tách vật tư (độ dày tôn, loại thép), số lượt dập, ước tính MOQ và gửi bảng giá chi tiết trong 24h.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10 bg-white p-6 rounded-2xl border border-slate-200 text-center flex flex-col items-center shadow-md">
+                    <div class="w-16 h-16 bg-navy-800 text-white font-heading font-black text-2xl rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                        03
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900 mb-2" data-i18n="step_3_t">Chế Mẫu (Sample)</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="step_3_d">
+                        Tiến hành chế tạo khuôn thử nghiệm và dập mẫu gửi khách hàng kiểm tra độ chuẩn dung sai trước khi ký hợp đồng.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative z-10 bg-white p-6 rounded-2xl border border-slate-200 text-center flex flex-col items-center shadow-md">
+                    <div class="w-16 h-16 bg-emerald-600 text-white font-heading font-black text-2xl rounded-2xl flex items-center justify-center mb-6 shadow-md">
+                        04
+                    </div>
+                    <h4 class="font-bold text-lg text-slate-900 mb-2" data-i18n="step_4_t">Sản Xuất & QC</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed" data-i18n="step_4_d">
+                        Dập hàng loạt trên dây chuyền tự động, nghiệm thu kiểm tra chất lượng QC nghiêm ngặt và giao hàng tận kho.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE FORM SECTION -->
+    <section id="quote-section" class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl border border-slate-200 p-8 sm:p-12">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="bg-brand-red/10 text-brand-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider" data-i18n="q_tag">Yêu Cầu Báo Giá Nhanh B2B</span>
+                    <h3 class="font-heading font-black text-2xl sm:text-3xl text-steel-900 mt-3 uppercase tracking-tight" data-i18n="q_title">GỬI YÊU CẦU BÁO GIÁ THEO BẢN VẼ KỸ THUẬT</h3>
+                    <p class="text-slate-500 text-sm mt-2" data-i18n="q_desc">Phản hồi báo giá trong vòng 2 - 24 giờ làm việc bởi Đội ngũ Kỹ sư Kim Khí 3P</p>
+                </div>
+
+                <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Họ và Tên Khách Hàng <span class="text-brand-red">*</span></label>
+                            <input type="text" id="form-name" required placeholder="Nguyễn Văn A" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <!-- Company Name -->
+                        <div>
+                            <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Tên Công Ty / Doanh Nghiệp</label>
+                            <input type="text" id="form-company" placeholder="Công ty TNHH ABC..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <!-- Phone / Zalo -->
+                        <div>
+                            <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Số Điện Thoại / Zalo <span class="text-brand-red">*</span></label>
+                            <input type="tel" id="form-phone" required placeholder="090x xxx xxx" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+
+                        <!-- Product Category Select -->
+                        <div>
+                            <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Hạng Mục Cần Báo Giá <span class="text-brand-red">*</span></label>
+                            <select id="form-product" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition">
+                                <option value="">-- Chọn mảng gia công --</option>
+                                <option value="Phụ tùng xe máy OEM">Phụ tùng xe máy OEM (Vành, ống xả, hộp xích...)</option>
+                                <option value="Giá kệ kho & Lồng thép công nghiệp">Giá kệ kho (Beam 48, 72, 97) & Lồng thép</option>
+                                <option value="Nội thất kim loại xuất khẩu">Nội thất kim loại xuất khẩu (Bàn ghế khung sắt)</option>
+                                <option value="Gia công đột dập theo bản vẽ CAD/3D">Gia công đột dập uốn hàn theo bản vẽ CAD/3D</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- CAD Drawing File Link -->
+                    <div>
+                        <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Link Đường Dẫn Bản Vẽ CAD / Google Drive / OneDrive</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-slate-400">
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                            <input type="url" id="form-drive-link" placeholder="https://drive.google.com/file/d/..." class="w-full pl-11 pr-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition">
+                        </div>
+                        <p class="text-[11px] text-slate-500 mt-1.5"><i class="fa-solid fa-circle-info text-brand-red me-1"></i> Quý khách hãy mở quyền truy cập link Drive hoặc dán link Dropbox/Fshare để kỹ sư bóc tách nhanh nhất.</p>
+                    </div>
+
+                    <!-- Notes -->
+                    <div>
+                        <label class="block text-xs font-bold text-steel-800 uppercase mb-2">Chi Tiết Yêu Cầu (Vật liệu, Độ dày tôn, Số lượng MOQ)</label>
+                        <textarea id="form-notes" rows="4" placeholder="Ví dụ: Cần báo giá dập 5.000 sản phẩm khung ghế sắt, tôn SPCC dày 1.5mm, sơn tĩnh điện màu đen..." class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-red focus:border-brand-red outline-none text-sm bg-slate-50 focus:bg-white transition"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-base py-4 rounded-xl shadow-xl hover:shadow-red-900/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-i18n="q_btn">GỬI YÊU CẦU BÁO GIÁ CHO KỸ SƯ</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Alert (Hidden by default) -->
+                <div id="form-success-alert" class="hidden mt-6 bg-emerald-50 border border-emerald-300 text-emerald-800 p-4 rounded-xl flex items-center gap-3 text-sm">
+                    <i class="fa-solid fa-circle-check text-2xl text-emerald-600"></i>
+                    <div>
+                        <strong class="block font-bold">Gửi yêu cầu báo giá thành công!</strong>
+                        <span>Cảm ơn Quý khách. Đội ngũ Kỹ sư Kim Khí 3P sẽ xem xét bản vẽ và liên hệ báo giá qua SĐT/Zalo ngay.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & MAP SECTION (LIGHT THEME) -->
+    <section id="contact" class="py-20 bg-white text-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-red font-bold text-xs uppercase tracking-widest">LIÊN HỆ TRỰC TIẾP</span>
+                        <h3 class="font-heading font-black text-3xl text-slate-900 uppercase tracking-tight mt-1">CÔNG TY CỔ PHẦN KIM KHÍ 3P</h3>
+                    </div>
+
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nhà máy sản xuất hiện đại tại KCN Lê Minh Xuân, TP.HCM sẵn sàng tiếp đón Quý đối tác và Doanh nghiệp đến tham quan thực tế xưởng đột dập, trao đổi bản vẽ B2B.
+                    </p>
+
+                    <div class="space-y-4 text-sm pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-brand-red shrink-0 shadow-sm">
+                                <i class="fa-solid fa-industry"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Địa Chỉ Nhà Máy:</strong>
+                                <span class="text-slate-600">KCN Lê Minh Xuân, Xã Lê Minh Xuân, Huyện Bình Chánh, TP. Hồ Chí Minh</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-brand-red shrink-0 shadow-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Điện Thoại / Hotline:</strong>
+                                <a href="tel:02837661674" class="text-brand-red font-bold hover:underline">(028) 3766 1674</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-brand-red shrink-0 shadow-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Email Báo Giá Bản Vẽ:</strong>
+                                <a href="mailto:kimkhi3p@3pmetal.vn" class="text-slate-600 hover:text-brand-red">kimkhi3p@3pmetal.vn</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-brand-red shrink-0 shadow-sm">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <strong class="block text-slate-900">Website Chính Thức:</strong>
+                                <a href="https://3pmetal.vn" target="_blank" class="text-slate-600 hover:text-brand-red">https://3pmetal.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Card -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 h-full flex flex-col justify-between shadow-md">
+                        <div class="relative w-full h-80 lg:h-full min-h-[300px] rounded-xl overflow-hidden bg-slate-200 flex items-center justify-center">
+                            <!-- Visual Factory Map Representation -->
+                            <div class="text-center p-6 space-y-3">
+                                <div class="w-16 h-16 bg-brand-red/10 rounded-full border border-brand-red/30 flex items-center justify-center mx-auto text-brand-red text-2xl animate-pulse">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-lg">VỊ TRÍ NHÀ MÁY KIM KHÍ 3P</h4>
+                                <p class="text-xs text-slate-600 max-w-sm mx-auto">KCN Lê Minh Xuân, Bình Chánh, TP.HCM - Nút giao thông thuận tiện cho vận chuyển xe tải & Container B2B.</p>
+                                <a href="https://maps.google.com/?q=KCN+Lê+Minh+Xuân+Bình+Chánh+TPHCM" target="_blank" class="inline-flex items-center gap-2 bg-brand-red text-white text-xs font-bold px-4 py-2.5 rounded-lg hover:bg-brand-redHover transition shadow-md">
+                                    <i class="fa-solid fa-diamond-turn-right"></i> Mở Google Maps Chỉ Đường
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (ELEGANT LIGHT FOOTER) -->
+    <footer class="bg-slate-100 border-t border-slate-200 text-slate-600 text-xs py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-brand-red text-white font-bold rounded flex items-center justify-center font-heading shadow-sm">3P</div>
+                <div>
+                    <span class="block font-bold text-slate-800">© 2026 CÔNG TY CỔ PHẦN KIM KHÍ 3P</span>
+                    <span>Tất cả quyền được bảo lưu. Official Website: 3pmetal.vn</span>
+                </div>
+            </div>
+            <div class="flex gap-6 text-slate-600 font-medium">
+                <a href="#about" class="hover:text-brand-red transition">Về Kim Khí 3P</a>
+                <a href="#products" class="hover:text-brand-red transition">Sản Phẩm OEM</a>
+                <a href="#quote-section" class="hover:text-brand-red transition">Báo Giá CAD</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- INTEGRATED AI TECHNICAL & QUOTE CHATBOT   -->
+    <!-- ========================================== -->
+
+    <!-- Floating Chatbot Toggle Button (Bottom Right) -->
+    <div id="chatbot-launcher" class="fixed bottom-6 right-6 z-50">
+        <button onclick="toggleChatbot()" class="relative group bg-gradient-to-r from-brand-red to-red-700 hover:from-red-600 hover:to-red-800 text-white p-4 rounded-full shadow-2xl transition transform hover:scale-110 flex items-center justify-center">
+            <!-- Pulsing ring effect -->
+            <span class="absolute -inset-1 rounded-full bg-brand-red opacity-75 animate-ping"></span>
+            <i class="fa-solid fa-headset text-2xl relative z-10"></i>
+            <!-- Unread notification badge -->
+            <span class="absolute -top-1 -right-1 bg-amber-400 text-steel-900 text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-white z-20">1</span>
+        </button>
+    </div>
+
+    <!-- Chatbot Popup Window Container (Bright Header & Body) -->
+    <div id="chatbot-window" class="hidden fixed bottom-6 right-6 z-50 w-full sm:w-[420px] max-w-[calc(100vw-2rem)] h-[580px] bg-white rounded-3xl chat-shadow border border-slate-200 flex flex-col overflow-hidden transition-all duration-300">
+        
+        <!-- Chatbot Header -->
+        <div class="bg-navy-900 text-white p-4 flex items-center justify-between border-b border-navy-800">
+            <div class="flex items-center gap-3">
+                <div class="relative">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-red to-orange-500 flex items-center justify-center text-white font-bold shadow">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-navy-900 rounded-full"></span>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-sm text-white leading-tight">Trợ Lý Kỹ Thuật Kim Khí 3P</h4>
+                    <span class="text-[10px] text-slate-300 flex items-center gap-1">
+                        <i class="fa-solid fa-bolt text-amber-400"></i> Tư vấn & Báo Giá Tự Động 24/7
+                    </span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-2 text-slate-300">
+                <button onclick="resetChat()" title="Tải lại trò chuyện" class="hover:text-white p-1 text-xs">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button onclick="toggleChatbot()" title="Đóng cửa sổ" class="hover:text-white p-1 text-sm">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Messages Body -->
+        <div id="chat-messages" class="flex-1 p-4 overflow-y-auto chat-scroll space-y-4 bg-slate-50">
+            <!-- Messages will be dynamically rendered here via JavaScript -->
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typing-indicator" class="hidden px-4 py-2 bg-slate-50 text-slate-500 text-xs flex items-center gap-2 border-t border-slate-100">
+            <i class="fa-solid fa-circle-notch animate-spin text-brand-red"></i>
+            <span>Trợ lý 3P đang xử lý câu hỏi kỹ thuật...</span>
+        </div>
+
+        <!-- Chat Input Area -->
+        <div class="p-3 bg-white border-t border-slate-200">
+            <form onsubmit="handleUserMessageSubmit(event)" class="flex items-center gap-2">
+                <input type="text" id="chat-input" placeholder="Nhập câu hỏi về đột dập, báo giá bản vẽ..." class="flex-1 px-4 py-2.5 rounded-full border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-red text-xs bg-slate-50 focus:bg-white text-slate-800 transition">
+                <button type="submit" class="bg-brand-red hover:bg-brand-redHover text-white w-10 h-10 rounded-full flex items-center justify-center shrink-0 shadow-md transition">
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                </button>
+            </form>
+            <div class="mt-2 text-center text-[10px] text-slate-500">
+                Chuyên gia đột dập & phụ tùng KCN Lê Minh Xuân
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Internationalization Data (VI / EN)
+        const translations = {
+            vi: {
+                nav_about: "Giới Thiệu",
+                nav_products: "Sản Phẩm Cốt Lõi",
+                nav_process: "Quy Trình B2B",
+                nav_quote: "Gửi Bản Vẽ Báo Giá",
+                nav_contact: "Liên Hệ",
+                nav_btn_quote: "Báo Giá Ngay",
+                hero_badge: "Nhà Máy Gia Công Cơ Khí & Đột Dập Hàng Đầu TP.HCM",
+                hero_desc: "Chuyên nghiệp sản xuất OEM Phụ tùng xe máy, Giá kệ kho công nghiệp (Beam 48, 72, 97), Lồng thép chứa hàng và Bàn ghế kim loại xuất khẩu theo tiêu chuẩn chất lượng nghiêm ngặt.",
+                hero_cta1: "Nhận Báo Giá Bản Vẽ CAD/3D",
+                hero_cta2: "Tham Quan Nhà Máy",
+                stat_1: "m² Diện Tích Xưởng",
+                stat_2: "Chính Xác Bản Vẽ",
+                stat_3: "Năm Kinh Nghiệm OEM",
+                about_subtitle: "VỀ CÔNG TY CỔ PHẦN KIM KHÍ 3P",
+                about_title: "NĂNG LỰC SẢN XUẤT CƠ KHÍ CHUẨN CÔNG NGHIỆP",
+                cap_1_title: "Đột Dập Kim Loại Tấm",
+                cap_1_desc: "Sở hữu dàn máy dập thủy lực & dập xích tải trọng lớn từ 25 tấn đến 250 tấn. Đảm bảo đột lỗ, dập định hình chuẩn tuyệt đối theo bản vẽ kỹ thuật.",
+                cap_2_title: "Thiết Kế Chế Tạo Khuôn Dập",
+                cap_2_desc: "Đội ngũ kỹ sư CAD/CAM giàu kinh nghiệm tự chủ bóc tách bản vẽ, lập trình và chế tạo khuôn dập đơn, khuôn dập liên hoàn tối ưu chi phí cho khách hàng.",
+                cap_3_title: "Hàn Robot & Sơn Tĩnh Điện",
+                cap_3_desc: "Trang bị dây chuyền hàn Robot TIG/MIG tự động hóa cao và xưởng sơn tĩnh điện khép kín. Bề mặt sản phẩm bóng đẹp, chống ăn mòn hóa chất hoàn hảo.",
+                prod_subtitle: "DANH MỤC SẢN XUẤT CHÍNH",
+                prod_title: "4 MẢNG SẢN PHẨM CỐT LÕI KIM KHÍ 3P",
+                prod_note: "Đáp ứng quy mô sản xuất hàng loạt (MOQ lớn) cho các tập đoàn OEM, chuỗi logistics và đối tác xuất khẩu Mỹ/Châu Âu.",
+                proc_subtitle: "QUY TRÌNH HỢP TÁC B2B CHUYÊN NGHIỆP",
+                proc_title: "4 BƯỚC TỪ BẢN VẼ ĐẾN BÀN GIAO MẶT HÀNG",
+                step_1_t: "Tiếp Nhận Bản Vẽ",
+                step_1_d: "Khách hàng gửi file CAD 2D (.dwg, .dxf) hoặc 3D (.step, .igs) qua Form/Zalo hoặc mẫu cơ khí thực tế.",
+                step_2_t: "Bóc Tách & Báo Giá",
+                step_2_d: "Đội ngũ kỹ sư bóc tách vật tư (độ dày tôn, loại thép), số lượt dập, ước tính MOQ và gửi bảng giá chi tiết trong 24h.",
+                step_3_t: "Chế Mẫu (Sample)",
+                step_3_d: "Tiến hành chế tạo khuôn thử nghiệm và dập mẫu gửi khách hàng kiểm tra độ chuẩn dung sai trước khi ký hợp đồng.",
+                step_4_t: "Sản Xuất & QC",
+                step_4_d: "Dập hàng loạt trên dây chuyền tự động, nghiệm thu kiểm tra chất lượng QC nghiêm ngặt và giao hàng tận kho.",
+                q_tag: "Yêu Cầu Báo Giá Nhanh B2B",
+                q_title: "GỬI YÊU CẦU BÁO GIÁ THEO BẢN VẼ KỸ THUẬT",
+                q_desc: "Phản hồi báo giá trong vòng 2 - 24 giờ làm việc bởi Đội ngũ Kỹ sư Kim Khí 3P",
+                q_btn: "GỬI YÊU CẦU BÁO GIÁ CHO KỸ SƯ"
+            },
+            en: {
+                nav_about: "About Us",
+                nav_products: "Core Products",
+                nav_process: "B2B Workflow",
+                nav_quote: "Request CAD Quote",
+                nav_contact: "Contact",
+                nav_btn_quote: "Get Quote",
+                hero_badge: "Leading Stamping & Precision Mechanical Factory in HCMC",
+                hero_desc: "Professional OEM manufacturing of Motorcycle Parts, Heavy Industrial Racking (Beam 48, 72, 97), Wire Mesh Containers, and Export Metal Furniture.",
+                hero_cta1: "Get CAD/3D Drawing Quote",
+                hero_cta2: "Visit Our Factory",
+                stat_1: "m² Factory Area",
+                stat_2: "Drawing Precision",
+                stat_3: "Years OEM Experience",
+                about_subtitle: "ABOUT 3P METAL JOINT STOCK COMPANY",
+                about_title: "INDUSTRIAL-GRADE MECHANICAL MANUFACTURING",
+                cap_1_title: "Sheet Metal Stamping",
+                cap_1_desc: "Equipped with hydraulic press machines from 25 to 250 tons. Ensuring precise punching and stamping tolerances as specified in engineering drawings.",
+                cap_2_title: "Stamping Die Design & Tooling",
+                cap_2_desc: "Experienced CAD/CAM engineering team designing single and progressive stamping dies, optimizing tooling costs for B2B partners.",
+                cap_3_title: "Robotic Welding & Powder Coating",
+                cap_3_desc: "Automated TIG/MIG welding robots and integrated powder coating lines delivering durable finish and high corrosion resistance.",
+                prod_subtitle: "CORE MANUFACTURING LINES",
+                prod_title: "4 CORE PRODUCT CATEGORIES AT 3P METAL",
+                prod_note: "Serving high-volume OEM production (large MOQ) for Tier-1 automotive, warehousing logistics, and US/EU export brands.",
+                proc_subtitle: "PROFESSIONAL B2B WORKFLOW",
+                proc_title: "4 STEPS FROM CAD DRAWING TO DELIVERY",
+                step_1_t: "Drawing Submission",
+                step_1_d: "Submit your 2D CAD (.dwg) or 3D (.step) files via Form/Zalo or physical sample.",
+                step_2_t: "Costing & Quotation",
+                step_2_d: "Engineers analyze raw material specs, stamping strokes, MOQ and send detailed quote within 24 hours.",
+                step_3_t: "Prototyping (Sample)",
+                step_3_d: "Tooling fabrication and sample production for dimension and tolerance verification prior to mass contract.",
+                step_4_t: "Mass Production & QC",
+                step_4_d: "High-speed automated stamping, rigorous QC inspection, and door-to-door logistics delivery.",
+                q_tag: "Fast B2B Quote Request",
+                q_title: "SUBMIT TECHNICAL DRAWING FOR QUOTATION",
+                q_desc: "Engineers respond within 2 to 24 business hours.",
+                q_btn: "SUBMIT DRAWING TO ENGINEERS"
+            }
+        };
+
+        let currentLang = 'vi';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            if (lang === 'vi') {
+                document.getElementById('lang-vi').className = "px-1.5 py-0.5 rounded text-white bg-brand-red transition font-bold";
+                document.getElementById('lang-en').className = "px-1.5 py-0.5 rounded text-slate-400 hover:text-white transition font-bold";
+            } else {
+                document.getElementById('lang-en').className = "px-1.5 py-0.5 rounded text-white bg-brand-red transition font-bold";
+                document.getElementById('lang-vi').className = "px-1.5 py-0.5 rounded text-slate-400 hover:text-white transition font-bold";
+            }
+        }
+
+        // Mobile Navigation Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Preselect Product from Catalog card click
+        function preselectProduct(productName) {
+            const select = document.getElementById('form-product');
+            select.value = productName;
+        }
+
+        // Form Submission Logic
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const product = document.getElementById('form-product').value;
+            const driveLink = document.getElementById('form-drive-link').value;
+
+            const alertBox = document.getElementById('form-success-alert');
+            alertBox.classList.remove('hidden');
+            
+            // Scroll smoothly to alert
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Notify chatbot automatically about lead
+            setTimeout(() => {
+                if (document.getElementById('chatbot-window').classList.contains('hidden')) {
+                    toggleChatbot();
+                }
+                appendBotMessage(`Cảm ơn anh/chị <strong>${name}</strong> (${phone})! Kỹ sư Kim Khí 3P đã ghi nhận yêu cầu báo giá cho mảng <strong>${product}</strong>. Chúng tôi sẽ gọi lại ngay!`);
+            }, 1000);
+        }
+
+        // ==========================================
+        // CHATBOT ENGINE LOGIC
+        // ==========================================
+        let chatHistory = [];
+        let isChatbotInitialized = false;
+
+        function toggleChatbot() {
+            const chatWin = document.getElementById('chatbot-window');
+            chatWin.classList.toggle('hidden');
+
+            if (!isChatbotInitialized && !chatWin.classList.contains('hidden')) {
+                initChatbotScript();
+                isChatbotInitialized = true;
+            }
+        }
+
+        function initChatbotScript() {
+            const messagesContainer = document.getElementById('chat-messages');
+            messagesContainer.innerHTML = '';
+
+            // Initial bot welcome message
+            const initialGreeting = "Xin chào! Tôi là Trợ lý Ảo của Kim Khí 3P. Quý khách đang cần gia công đột dập, phụ tùng xe máy hay kết cấu kệ kho/nội thất?";
+            appendBotMessage(initialGreeting);
+
+            // Quick Prompt Chips
+            appendQuickChips([
+                "Báo giá theo bản vẽ CAD",
+                "Kệ kho & Lồng thép",
+                "Phụ tùng xe máy",
+                "Địa chỉ xưởng KCN Lê Minh Xuân"
+            ]);
+        }
+
+        function resetChat() {
+            chatHistory = [];
+            initChatbotScript();
+        }
+
+        function appendUserMessage(text) {
+            const container = document.getElementById('chat-messages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "flex justify-end mb-3";
+            msgDiv.innerHTML = `
+                <div class="bg-brand-red text-white text-xs px-4 py-2.5 rounded-2xl rounded-tr-none max-w-[85%] shadow-sm">
+                    ${text}
+                </div>
+            `;
+            container.appendChild(msgDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function appendBotMessage(htmlText) {
+            const container = document.getElementById('chat-messages');
+            const msgDiv = document.createElement('div');
+            msgDiv.className = "flex justify-start mb-3";
+            msgDiv.innerHTML = `
+                <div class="flex items-start gap-2 max-w-[88%]">
+                    <div class="w-7 h-7 rounded-full bg-navy-900 text-brand-red flex items-center justify-center shrink-0 text-xs font-bold shadow-sm">
+                        3P
+                    </div>
+                    <div class="bg-white border border-slate-200 text-slate-800 text-xs p-3.5 rounded-2xl rounded-tl-none shadow-sm space-y-2 leading-relaxed">
+                        ${htmlText}
+                    </div>
+                </div>
+            `;
+            container.appendChild(msgDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function appendQuickChips(chips) {
+            const container = document.getElementById('chat-messages');
+            const chipsDiv = document.createElement('div');
+            chipsDiv.className = "flex flex-wrap gap-1.5 my-2 pl-9";
+            
+            chips.forEach(chipText => {
+                const btn = document.createElement('button');
+                btn.className = "text-[11px] bg-white hover:bg-brand-red hover:text-white text-slate-700 px-3 py-1.5 rounded-full transition border border-slate-300 shadow-sm font-medium";
+                btn.textContent = chipText;
+                btn.onclick = () => handleChipClick(chipText);
+                chipsDiv.appendChild(btn);
+            });
+
+            container.appendChild(chipsDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function handleChipClick(text) {
+            appendUserMessage(text);
+            processBotReply(text);
+        }
+
+        function handleUserMessageSubmit(e) {
+            e.preventDefault();
+            const input = document.getElementById('chat-input');
+            const query = input.value.trim();
+            if (!query) return;
+
+            appendUserMessage(query);
+            input.value = '';
+            processBotReply(query);
+        }
+
+        function processBotReply(userQuery) {
+            showTyping(true);
+
+            setTimeout(() => {
+                showTyping(false);
+                const q = userQuery.toLowerCase();
+
+                // KỶ LUẬT BÁO GIÁ RULE: Check if query contains pricing / cost / báo giá
+                if (q.includes("giá") || q.includes("bao gia") || q.includes("báo giá") || q.includes("chi phí") || q.includes("tốn bao nhiêu") || q.includes("nhiêu tiền") || q.includes("price") || q.includes("cost")) {
+                    const priceReply = `
+                        <p class="font-bold text-brand-red"><i class="fa-solid fa-calculator me-1"></i> Kỷ luật Báo giá Kỹ thuật Kim Khí 3P:</p>
+                        <p>Đơn giá gia công đột dập phụ thuộc trực tiếp vào các yếu tố:</p>
+                        <ul class="list-disc pl-4 space-y-1 text-slate-600">
+                            <li>Loại vật liệu (Tôn SPCC, SS400, Inox 304, Nhôm)</li>
+                            <li>Độ dày tôn & Số bước đột dập/uốn</li>
+                            <li>Kích thước dung sai bản vẽ CAD/3D</li>
+                            <li>Số lượng đơn hàng hàng loạt (MOQ)</li>
+                        </ul>
+                        <div class="mt-2 bg-amber-50 p-2.5 rounded-lg border border-amber-200 text-[11px]">
+                            👉 <strong>Xin vui lòng để lại Tên + SĐT/Zalo</strong> hoặc dán link bản vẽ Google Drive ở khung chát để Kỹ sư Kim Khí 3P bóc tách & gửi bảng báo giá chính xác nhất!
+                        </div>
+                    `;
+                    appendBotMessage(priceReply);
+                    appendQuickChips(["Gửi link Google Drive bản vẽ", "Tôi cần tư vấn gấp SĐT", "Xem quy trình làm mẫu"]);
+                    return;
+                }
+
+                // Topic: CAD / Drawing
+                if (q.includes("cad") || q.includes("bản vẽ") || q.includes("3d") || q.includes("step") || q.includes("drive")) {
+                    appendBotMessage(`
+                        <p><strong>Dịch vụ Bóc Tách Bản Vẽ CAD/3D:</strong></p>
+                        <p>Kim Khí 3P nhận các định dạng file: <code>.dwg</code>, <code>.dxf</code>, <code>.step</code>, <code>.igs</code>, <code>.sldprt</code>.</p>
+                        <p class="mt-1">Quý khách có thể gửi trực tiếp link file vào khung chat này hoặc qua Email: <a href="mailto:kimkhi3p@3pmetal.vn" class="text-brand-red font-bold underline">kimkhi3p@3pmetal.vn</a>.</p>
+                    `);
+                    appendQuickChips(["Form Đăng Ký Báo Giá", "Gọi Hotline (028) 3766 1674"]);
+                    return;
+                }
+
+                // Topic: Racking / Wire Mesh Container
+                if (q.includes("kệ") || q.includes("beam") || q.includes("lồng thép") || q.includes("kho")) {
+                    appendBotMessage(`
+                        <p><strong>Giá Kệ Kho & Lồng Thép Công Nghiệp Kim Khí 3P:</strong></p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li>Thanh Beam dập châm hèm: <strong>Beam 48, Beam 72, Beam 97</strong> chịu tải trọng từ 1.000kg - 3.000kg/tầng.</li>
+                            <li>Lồng thép chứa hàng (Wire Mesh Container): Gấp gọn tiện lợi, mạ kẽm điện phân hoặc nhúng nóng chống gỉ sét.</li>
+                        </ul>
+                    `);
+                    appendQuickChips(["Báo giá Beam 48/72/97", "Báo giá Lồng Thép Kho"]);
+                    return;
+                }
+
+                // Topic: Motorcycle OEM
+                if (q.includes("xe máy") || q.includes("vành") || q.includes("pô") || q.includes("ống xả") || q.includes("hộp xích")) {
+                    appendBotMessage(`
+                        <p><strong>Phụ Tùng Xe Máy OEM Hàng Loạt:</strong></p>
+                        <p>Chúng tôi chuyên gia công dập khung gầm, vành xe, ống xả (pô xe), hộp xích xì mạ mờ/bóng cho các hãng xe máy top đầu.</p>
+                        <p class="mt-1 font-semibold text-slate-700">Đáp ứng tiêu chuẩn dung sai khắt khe ISO 9001:2015.</p>
+                    `);
+                    appendQuickChips(["Yêu cầu báo giá xe máy", "Địa chỉ nhà máy"]);
+                    return;
+                }
+
+                // Topic: Factory Location
+                if (q.includes("địa chỉ") || q.includes("xưởng") || q.includes("nhà máy") || q.includes("ở đâu") || q.includes("lê minh xuân") || q.includes("bình chánh")) {
+                    appendBotMessage(`
+                        <p><strong><i class="fa-solid fa-industry text-brand-red me-1"></i> CÔNG TY CỔ PHẦN KIM KHÍ 3P</strong></p>
+                        <p>📍 <strong>Địa chỉ nhà máy:</strong> Đường số 6, KCN Lê Minh Xuân, Huyện Bình Chánh, TP. Hồ Chí Minh.</p>
+                        <p>📞 <strong>Hotline/Zalo:</strong> (028) 3766 1674</p>
+                        <p>✉️ <strong>Email:</strong> kimkhi3p@3pmetal.vn</p>
+                        <p class="mt-1">Kính mời Quý đối tác đăng ký lịch tham quan thực tế quy mô xưởng đột dập!</p>
+                    `);
+                    appendQuickChips(["Đặt lịch tham quan xưởng", "Báo giá sản phẩm"]);
+                    return;
+                }
+
+                // Lead Collection: User provided Phone / Name
+                if (/\d{8,11}/.test(userQuery)) {
+                    appendBotMessage(`
+                        <p class="text-emerald-700 font-bold"><i class="fa-solid fa-circle-check text-emerald-600 me-1"></i> Đã tiếp nhận thông tin liên hệ!</p>
+                        <p>Kỹ sư Kim Khí 3P đã lưu số điện thoại <strong>${userQuery.match(/\d{8,11}/)[0]}</strong>. Chúng tôi sẽ kiểm tra bản vẽ/yêu cầu và liên hệ lại tư vấn báo giá ngay lập tức!</p>
+                    `);
+                    return;
+                }
+
+                // Fallback smart response
+                appendBotMessage(`
+                    <p>Cảm ơn Quý khách đã quan tâm đến năng lực gia công của <strong>Kim Khí 3P</strong>.</p>
+                    <p>Để trợ giúp nhanh nhất, xin vui lòng chọn mảng sản phẩm Quý khách quan tâm bên dưới hoặc để lại <strong>SĐT / Zalo</strong> để kỹ sư gọi lại ngay!</p>
+                `);
+                appendQuickChips([
+                    "Báo giá theo bản vẽ CAD",
+                    "Kệ kho & Lồng thép",
+                    "Phụ tùng xe máy OEM",
+                    "Nội thất kim loại xuất khẩu"
+                ]);
+
+            }, 600);
+        }
+
+        function showTyping(visible) {
+            const indicator = document.getElementById('typing-indicator');
+            if (visible) {
+                indicator.classList.remove('hidden');
+            } else {
+                indicator.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>
